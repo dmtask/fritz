@@ -1,1 +1,4 @@
 # fritz
+
+- kivy
+- fritzconnection
