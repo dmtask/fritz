@@ -20,10 +20,13 @@ class Screen:
         btn1.bind(on_press=partial(self.press_button, 'state'))
         btn2 = Button(text='WLAN an/aus')
         btn2.bind(on_press=partial(self.press_button, 'wlan'))
+        btn3 = Button(text='WLAN QR Code')
+        btn3.bind(on_press=partial(self.press_button, 'wlan_qr_code'))
 
         layout.add_widget(Label(text='Fritzbox Panel', color=(0, 0, 0)))
         layout.add_widget(btn1)
         layout.add_widget(btn2)
+        layout.add_widget(btn3)
 
         return layout
 
